@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif
+	
+}
+
+b{
+	font-size: 25px;
+	line-height : 1;
+}
+
+body{
+	
+letter-spacing: 0;
+line-height: 1.5;
+font-size: 15px;
+color :#444;
+font-weight: 400;
+
+}
+
+.img{
+	align-content: center;
+}
+
+.inner{
+	width: 1080px;
+	margin : 0 auto;
+}
+
+
+.pay{
+	
+	margin: 0 0 40px 0;
+}
+
+.div{
+	display: block;
+}
+
+h2{
+	margin-top: 200px;
+	display : block;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+h2.head{
+	font-size : 28px;
+	font-weight : 400;
+	letter-spacing: -1px;
+	line-height: 1.1;
+	color : #222;
+}
+
+.pay .left{
+	float : left;
+	width : 480px;
+	padding: 0 0 30px 0;
+	
+}
+
+.pay .right{
+	float: left;
+	width : calc(100% - 480px);
+	padding: 15px 0 30px 40px;
+	border-left: 3px;
+	border-left-color: #2F2F2F;
+	
+}
+
+p{
+	margin-block-start : 1em;
+	margin-block-end : 1em;
+	margin-inline-start : 0px;
+	margin-inline-end :0px;
+}
+
+img{
+	border: 0;
+}
+
+.pay .box .left .img p img{
+	max-width : 400px;
+	max-height: 400px;
+}
+
+.pay .box .left .img p{
+	
+	display: table-cell;
+	height : 200px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.btn{
+	
+	position: relative;
+	float : left;
+	padding : 20px 0 0 0;
+	margin : 20px 0 0 100px;
+	text-align : center;
+	
+}
+
+
+
+
+.btn .cancelbtn{
+	border : 1px solid #503396;
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+.btn .cancelbtn:hover{
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+
+.btn .paybtn {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+.btn .paybtn:hover{
+		color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+}
+	

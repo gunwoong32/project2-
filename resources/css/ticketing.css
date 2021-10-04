@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.ticketing_content h2{padding: 1rem  0 1.2rem;}
+.steps{display:flex;justify-content: space-between;}
+.steps>div{flex: 0 0 22%;box-sizing: border-box;position: relative;}
+.steps>div::after{display: block;content: '\276D';font-weight: 900;position: absolute;top: 50%;left: 100%;margin-left: .4em;margin-top:-.5em; color:#dfdfdf;font-size: 3rem;}
+.steps>div:last-child::after{display:none;}
+.steps>div p{color:#fff;margin-bottom:1rem; background:#444;line-height: 2.6rem;font-size: 1rem;text-align: center;}
+.steps>div input,
+.steps>div select{cursor:pointer; display: block;width: 100%;box-sizing: border-box;height: 2.4rem;border:solid 1px #dfdfdf;padding: 0 .3em;}
+.next_btn button{display: block;width: 14rem;margin: 3rem auto; line-height: 2.4em;text-align: center;background:#351f67;cursor:pointer;border-radius: .4rem;letter-spacing:-.04em; color: #fff;font-size: 1.2rem; border:none;font-weight: bold;}
+
+.ticketing_content>p{font-size:.8rem;color: #666;margin-bottom: 1rem;}
+.theater{display:flex;}
+.seats{box-sizing: border-box;background: #ededed;padding: 1rem;flex: 1;}
+.seats::before{display: block;content:'스크린'; font-size: .8rem;line-height: 2em;text-align: center;background:#351f67;color:#fff;margin:2rem 0;}
+.seats .row{display: flex;width: 100%;justify-content: space-between;}
+.seats .row button{cursor:pointer; display: block; flex: 0 0 15%;font-size: .8rem;margin-bottom:2%;line-height:4em; border: none;background: #ddd;}
+.seats .row button.active{background:#351f67;color:#fff;}

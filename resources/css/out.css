@@ -1,0 +1,7 @@
+input[type ="radio"] {display : none;}
+input[type ="radio"] + label {display: inline-block;padding: 20px;background: #aaa; font-size: 14px;cursor: pointer;}
+input[type ="radio"]:checked + label {background: #503396;}
+.conbox {width: 500px;height: 600px;background: #aaa;margin:0 auto;display: none;}
+input[id="tab01"]:checked ~ .con01 {display: block;}
+input[id="tab02"]:checked ~ .con02 {display: block;}
+input[id="tab03"]:checked ~ .con03 {display: block;}

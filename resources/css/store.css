@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif
+}
+
+body{
+	letter-spacing : 0;
+	line-height: 1.5;
+	font-size: 15px;
+	font-weight : 400;
+	color: #444;
+	
+}
+
+b{
+	font-size : 20px;
+	
+}
+
+div{
+	display: block;
+	
+}
+
+.img{
+	overflow: hidden;
+}
+
+.inner {
+	margin-left : 10px;
+	margin-right : 10px;
+	
+	width : 1080px;
+	margin : 0 auto;
+}
+
+.mb15{
+	
+	margin-bottom: 15px!important;
+}
+
+.mt70{
+	margin-top: 70px!important;
+}
+
+.tit-util .title{
+	float: left;
+	padding: 0;
+	line-height: 1.1;
+}
+
+.tit-util:after, .tit-util:before{
+	content: '';
+	display: block;
+}
+
+
+
+h2{
+	margin-top: 150px;
+	display : block;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+h3{
+	margin-left: 20px;
+	display : block;
+	padding : 0 0 26px 0;
+	
+}
+
+h3.title{
+	margin : 0;
+	font-size: 24px;
+	color : #503396; 
+}
+
+.store-list{
+	overflow : hidden;
+	float: left;
+}
+
+li{
+	display: list-item;
+	float: right;
+	margin-top: 10px;
+	padding : 55px;
+	color :  #503396; 
+}
+
+ul{
+	display: block;
+	margin-block-start : 1em;
+	margin-block-end : 1em;
+	margin-inline-start : 0px;
+	margin-inline-end : 0px;
+	padding-inline-start : 40px;
+	float : right;
+}
+
+ol, ul{
+	list-style-type: none;
+	padding : 0;
+	margin : 0;
+}
+
+.store-list .list li a{
+position: relative;
+display: block;
+height: 350px;
+text-decoration: none;
+border : 1px solid #747CF8;
+border-radius : 10px;
+margin-top: 50px;
+background : #eeeeee; 
+}
+
+a:link{
+	color :#444;
+	text-decoration: none;
+}
+.store-list .list li{
+ 	position: relative;
+ 	float : left;
+ 	width: 245px;
+ 	margin: 0 0 0 40px;	
+	border-radius: 10px;
+}
+
+.store-list .list{
+	margin: 0 0 0 -40px;
+}
+
+
+.store-list .list li .img{
+	height : 243px;
+	font-size: 0;
+	line-height: 243px;
+	text-align: center;
+	background: #eee;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+	transition: transform .8s ease;
+}
+
+img:hover {
+		transform: scale(1.05);
+	}
+
+.hot{
+	position: absolute;
+	padding-left:auto;
+	padding-right:auto;
+	background : #2F2F2F;
+	color:#FEFFFF;
+	font-weight:800;
+	text-align: center;
+}
+
+.store-list .list li .info{
+	padding: 0 20px;
+	border-top: 1px solid #e4e4e4;
+	line-height: 1.3;
+}
+
+
+
+
+

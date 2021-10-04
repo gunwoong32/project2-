@@ -1,0 +1,44 @@
+/*초기화*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;color: #010101;font-family: 'Noto Sans KR', sans-serif;}
+html,body{font-size: 16px;color: #010101;font-family: 'Noto Sans KR', sans-serif;}
+address{font-style: normal;}
+.blind{display:none;}
+
+/*레이아웃 사이즈*/
+.inner_wrap{max-width: 1272px;width: 100%;margin: 0 auto;box-sizing: border-box;padding: 0 2rem;}
+
+/*상단 메뉴 디자인*/
+.header{width: 100%;z-index: 50;background:#000;}
+.header h1 img{width: 200px;}
+.header>div{display: flex;align-items: center;height: 90px;padding: 0 2rem;}
+.header .site_nav {display: flex;margin:0 auto 0 34px;}
+.header .site_nav ul{display: flex;justify-content: flex-end;}
+.header .site_nav li{margin-left: 40px;}
+.header .site_nav a{color: #fff;font-size: 1.25rem;font-weight: bold;white-space: nowrap;}
+.header .user_nav {display: flex;justify-content: flex-end;}
+.header .user_nav ul{display: flex;}
+.header .user_nav li{margin-left: 12px;}
+.header .user_nav a{color: #dfdfdf; font-size: .825rem;white-space: nowrap;}
+
+/*하단 디자인*/
+.footer{border-top: solid 1px #dfdfdf;box-sizing: border-box;padding-top: 3rem;padding-bottom: 3rem;}
+.footer h2 img{width: 120px;}
+.footer .footer_menu ul{display: flex;align-items: center;}
+.footer .footer_menu ul li{margin-left: .6rem;}
+.footer .footer_menu ul li:first-child{margin-left: 0;}
+.footer .footer_menu ul a{font-size: .9rem;color: #444;}
+.footer .footer_company_info{display: flex;align-items: center;}
+.footer .footer_company_info address{margin-left: 1rem;color: #444;}
+
+/*서브페이지 네이게이터 디자인*/
+.sub_site_nav{background: #f8f8f8;padding: .6rem 0;}
+.sub_site_nav ul{display: flex;}
+.sub_site_nav li{margin-left:.8rem}
+.sub_site_nav li::after{display:inline;content:'\276D';margin-left:.8rem;color:#444;font-size: .4rem}
+.sub_site_nav li:first-child{margin-left:0;}
+.sub_site_nav li:last-child:after{display: none;}
+.sub_site_nav a{font-size: 12px; font-weight: 400;color:#444;}

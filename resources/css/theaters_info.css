@@ -1,0 +1,17 @@
+@charset "UTF-8";
+main{padding-bottom: 120px;}
+.theaters_content h2{padding: 1rem  0 1.2rem;}
+.theaters_content .select_theater ul{display: flex;background: #fff;position: relative;z-index: 10;}
+.theaters_content .select_theater li{flex: 1;}
+.theaters_content .select_theater li a{display: block;text-align: center;font-size: 1rem;line-height: 3.4em;border:solid 1px #f8f8f8;border-left-color: transparent;border-bottom-color:transparent;}
+.theaters_content .select_theater li.active a{border-color:#ccc;border-bottom-color:transparent;}
+.theaters_content .select_theater li:not(.active) a{border-bottom-color:#ccc;}
+.theaters_content .theaters_wrap{border:solid 1px #ccc;margin-top:-1px;}
+.theaters_content .theaters_wrap>div{display: none;box-sizing: border-box;padding: 3rem;}
+.theaters_content .theaters_wrap>div.active{display:block;}
+.theaters_content .theaters_wrap>div table{width: 100%;border-collapse: collapse;}
+.theaters_content .theaters_wrap>div table th,
+.theaters_content .theaters_wrap>div table td{text-align: center;border: solid 1px #ccc;}
+
+.kakao_map{position: relative; height: 460px;}
+.kakao_map #map{position: absolute;top: 0; left: 0; width: 100%; height: 100%;}

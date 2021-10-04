@@ -1,0 +1,36 @@
+ .header{position: absolute;top: 0;left: 0;background:none;}
+/* .header{position: relative; top:0 ;left: 0;width: 100%;z-index: 50; background-color: #000;} */
+/* .header{position: relative;top: 0;left: 0;background:none;} */
+main{padding-bottom: 120px;}
+
+.visual{height: 92vh;min-height: 720px; background: #000; position: relative;overflow-x: hidden;padding-top: 90px;}
+.visual .bg_pic{position: absolute;z-index: 0;width: 65%;top: -90px;right: 0%; height: 100%;background-position: center;background-size:cover;background-repeat: no-repeat;opacity: 1;box-shadow:  inset 0 0 4vw 5vw #000;border-bottom-left-radius: 40%;border-top-left-radius: 30%;opacity: 0;transition: opacity .5s ease;}
+.visual .bg_pic::after{display: block;position: absolute;content: '';top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.85);}
+.visual .movie_info{padding:2rem;}
+.visual .movie_info .movie_title{font-size: 3rem; color:#fff;letter-spacing: -.04em;margin-bottom: .4em;text-indent: -.1em; transition: .5s ease; opacity: 0;transform: translateY(30%);}
+.visual .movie_info .movie_summary{font-size: 1rem;color:#fff;word-break: break-word;white-space: normal; transition: .5s ease;line-height: 1.5; opacity: 0;transform: translateY(30%);}
+.visual.on .movie_title,
+.visual.on .movie_summary{transform: translateY(0%); opacity: 1; transition-delay: .3s;}
+.visual.on .bg_pic{opacity: 1;}
+
+.visual .slider{position: absolute ;bottom: 30px;left: 0;width: 100%;padding: 0 40px;box-sizing: border-box;}
+.visual .swiper{overflow: visible;}
+.visual .swiper-wrapper{align-items: flex-end;}
+.visual .swiper-slide{width: 10vw;min-width: 200px;margin-right: 2.6rem;transition: transform .8s ease;will-change:transform;}
+.visual .swiper-slide.swiper-slide-active{transform: scale(1.15);transform-origin: bottom;}
+.visual .swiper-slide img{width: 100%;}
+.visual .swiper-slide figcaption{color: #fff;font-size: 1rem;width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.section{padding-top: 2.5rem;}
+.section h3{font-size: 2rem;}
+
+.event_content{display: flex;justify-content: flex-start;}
+.event_content .event_slider article{display: flex;width: 100%;justify-content: space-between;}
+.event_content .event_slider a{display: block;}
+.event_content .event_slider img{display: block;width: 100%;}
+.event_content .event_slider .event_info{flex: 0 0 40%;}
+.event_content .event_slider .event_img{flex: 0 0 60%;}
+.event_content .paginations{position: absolute;bottom:0;left:0;display: flex;width: 40%;height: 3px;z-index: 10;}
+.event_content .paginations span{flex: 1;display: block;background: #ccc;border-radius: 0;}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:0;}
