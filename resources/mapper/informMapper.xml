@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="inform">
+	<insert id="add" parameterType="informVO">
+		insert into PERSONALINFORM values (#{piid}, #{pw}, #{name}, #{birth}, #{tel}, #{email}, #{ticketmachine}, #{mygigabox}, #{terms}, #{marketing}, #{method})
+	</insert>
+	
+	<select id="checkId" parameterType="informVO" resultType="informVO">
+		select PIID from PERSONALINFORM where PIID = #{piid}
+	</select>
+	
+	<select id="dbid" parameterType="informVO" resultType="String">
+		select PIID from PERSONALINFORM where PIID = #{piid} 
+	</select>
+	
+	<select id="dbpw" parameterType="informVO" resultType="String">
+		select PW from PERSONALINFORM where PIID = #{piid}
+	</select>
+	
+	<select id="findId" parameterType="informVO" resultType="informVO">
+		select PIID from PERSONALINFORM where name = #{name} AND tel = #{tel}
+	</select>
+	
+	<select id="readInform" parameterType="informVO" resultType="informVO">
+		select * from PERSONALINFORM where PIID = #{piid}
+	</select>
+	
+	<update id="edittel" parameterType="informVO">
+		UPDATE PERSONALINFORM SET TEL = #{tel} WHERE PIID = #{piid} 
+	</update>
+	
+	<update id="editemail" parameterType="informVO">
+		UPDATE PERSONALINFORM SET EMAIL = #{email} WHERE PIID = #{piid} 
+	</update>
+	
+	<update id="editpw" parameterType="informVO">
+		UPDATE PERSONALINFORM SET pw = #{pw} WHERE PIID = #{piid} 
+	</update>
+	
+	<delete id="withdraw"  parameterType="informVO">
+		DELETE FROM  PERSONALINFORM WHERE PIID = #{piid}
+	</delete>
+
+</mapper>
