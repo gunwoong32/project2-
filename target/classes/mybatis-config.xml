@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+      <typeAlias type="com.mega.mvc01.EveDTO" alias="eveVO"></typeAlias>
+       <typeAlias type="com.mega.mvc01.MovieListDTO" alias="movieVO"></typeAlias>
+       <typeAlias type="com.mega.mvc01.MovieListDTO1" alias="movieVO1"></typeAlias>
+  <!--     <typeAlias type="com.mega.project2.MovieReviewDTO" alias="mReviewVO"></typeAlias>
+      <typeAlias type="com.mega.project2.CreateAskDTO" alias="AskVO"></typeAlias>  -->
+            <typeAlias type="com.mega.mvc01.MovieReviewDTO" alias="mReviewVO"></typeAlias>
+      <typeAlias type="com.mega.mvc01.CreateAskDTO" alias="AskVO"></typeAlias>
+      <typeAlias type="com.mega.mvc01.TheaterDTO" alias="TheaterVO"></typeAlias>
+      
+      <!-- 건웅 -->
+      <typeAlias type="com.mega.mvc01.TheaterDTO" alias="theaterVO"></typeAlias>
+      <typeAlias type="com.mega.mvc01.BookingDTO" alias="bookingVO"></typeAlias>
+      <typeAlias type="com.mega.mvc01.MovieDTO" alias="movieVO2"></typeAlias>
+      
+      <!-- 민욱 -->
+      <typeAlias type="com.mega.mvc01.StoreDTO" alias="storeVO"></typeAlias>
+      <typeAlias type="com.mega.mvc01.ProductListDTO" alias="plVO"></typeAlias>
+      
+      <!-- 정원 -->
+      <typeAlias type="com.mega.mvc01.PersonalInformDTO" alias="informVO"></typeAlias>
+   </typeAliases>
+   <mappers>
+   	<!-- 이랑 -->
+      <mapper resource="mapper/eveMapper.xml" />
+      <!-- 이랑,은규 cBbs.xml 같이씀 -->
+      <mapper resource="mapper/cBbs.xml" />
+      <!-- 건웅 -->
+      <mapper resource="mapper/theaterMapper.xml" />
+      <mapper resource="mapper/bookingMapper.xml" />
+      <mapper resource="mapper/movieMapper.xml" />
+      
+      <!-- 민욱 -->
+      
+        <mapper resource="mapper/StoreMapper.xml" />
+      <mapper resource="mapper/ProductListMapper.xml" />
+      
+      <!-- 정원 -->
+      <mapper resource="mapper/informMapper.xml" />
+   </mappers>
+</configuration>
